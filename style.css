@@ -1,0 +1,340 @@
+*{
+    border: 0; 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+
+}
+
+:root{
+    --bg-color:#1f242d;
+    --second-bg-color:#323946;
+    --text-color:#fff;
+     --main-color:#0ef;
+}
+html{
+    font-size: 62%;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+   background-color: var(--bg-color);
+   color: var(--text-color);
+   overflow-x: hidden;
+}
+.swiper{
+    width: 950px;
+}
+section{
+    min-height:100vh;
+    padding: 5rem 9%;
+
+}
+.header{
+    
+   width: 100%;
+   padding: 2rem 9%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   
+    
+}
+.logo{
+    font-size: 5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+.logo a span{
+    color: var(--main-color);
+    
+
+}
+.navbar a{
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transform: 0.3s;
+}
+.navbar:hover{
+    transform: scale(1.1);
+}
+.navbar a:hover ,.navbar a.active
+
+{
+    color: var(--main-color);
+    transform: scale(1.5);
+}
+
+#menu-icon{
+    font-size:3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    flex-wrap: wrap;
+
+}
+ .img{
+    border-radius: 5px;
+    border: 5px solid var(--main-color);
+    margin-left: 6rem;
+    position: relative;
+
+ }
+ .img:hover{
+    transform: scale(1.1);
+ }
+ 
+ 
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(350deg);
+    }
+}
+
+#hello{
+    font-size: 3.5rem;
+    font-weight: 700;
+
+}
+ #hello span{
+    color: var(--main-color);
+ }
+span{
+    color:var(--main-color);
+}
+.home-content h1{
+ font-size: 5.6rem;
+ font-weight: 700;
+ 
+}
+#about{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.home-content p{
+    font-size: 2rem;
+}
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+}
+.social-media a:hover{
+    background-color: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: var(--main-color);
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    animation: button 2s ease-in-out infinite;
+    
+    margin-left: 5rem;
+}
+.btn:hover{
+    box-shadow: none;
+    animation: none;
+    
+}
+@keyframes button {
+    from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scaleX(1.5) scaleY(1.5);
+        
+
+    }
+}
+.skill{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    margin-top: -5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-color);
+    color: var(--text-color);
+    flex-wrap: wrap;
+}
+.heading{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 3.5rem;
+    flex-direction: column;
+}
+ .heading hr{
+    position: relative;
+    background-color: var(--main-color);
+    width: 70px;
+    height: 4px;
+    border: none;
+ }
+ .content{
+     position: relative;
+     width: 300px;
+     padding: 20px;
+     margin: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     flex-direction: column;
+     text-align: center;
+ }
+ .content  img{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    background: var(--text-color);
+    
+    border-radius: 50%;
+ }
+.content h2{
+    font-size: 18px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+.content P{
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.card{
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: relative;
+    flex-wrap: wrap;
+
+    text-align: center;
+  
+}
+.card img{
+    height:250px;
+    width: 250px;
+    border-radius: 10px;
+    position: relative;
+}
+.card-content{
+    margin: 5rem;
+    max-width: 400px;
+}
+.card-text{
+    color: var(--text-color);
+    line-height: 1.4;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.card-content:hover{
+    transform: scale(1.1);
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     
+     background-color: var(--bg-color);
+}
+.contact-content{
+           
+    text-align: center;
+    background: var(--second-bg-color); 
+    width: 80%;
+    margin-top: 20px;
+}
+
+.contact-content h2{
+    font-size:2rem ;
+    font-weight:700 ;
+    color: var(--text-color);
+}
+.contact .contactInfo{
+    width: 60%;
+    display: flex;
+}
+.contact .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+ 
+}
+
+.contact .contactInfo .box{
+    margin-left: 20px;
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+.contact .contactInfo .box a{
+    text-decoration: none;
+    color: var(--text-color);
+    text-align: center;
+}
+.contact .contactInfo h3{
+   color: var(--main-color);
+
+
+}
+.contactForm{
+    padding: 40px;
+    
+}
+.contactForm h2{
+   color: var(--main-color);
+   font-size: 2rem ;
+   font-weight:700;
+}
+.contactForm label{
+    font-size: 1.8rem;
+    font-weight: 500;
+    
+}
+.contactForm button{
+    height: 30px;
+    width: 100px;
+    background-color: var(--main-color);
+    border-radius: 15px;
+    color: var(--second-bg-color);
+}
+.contact:hover{
+    transform: scale(1.1);
+}
